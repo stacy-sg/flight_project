@@ -1,0 +1,23 @@
+anaconda 가상 환경 설치 및 커널 연결
+
+1. conda info --envs 또는 conda-env list
+anaconda에 존재하는 가상환경 리스트 확인
+
+2. conda create -n 가상환경이름 python=버전 (python 버전 설정은 선택사항)
+가상환경 생성
+
+3. conda remove --name 가상환경 이름 --all
+가상환경 삭제
+
+4. conda activate 가상환경이름
+가상환경 활성화(괄호안에 base에서 가상환경이름으로 바뀜)
+
+5. conda deactivate
+가상환경 비활성화(가상환경이 활성화된 상태에서 실행가능)
+
+6. python -m ipykernel install --user --name 가상환경이름 --display-name "커널출력이름"
+커널출력이름은 주피터 노트북에서 보이게 될 이름으로 가상환경과 커널을 연결해주는 것
+
+7. jupyter kernelspec uninstall 가상환경이름
+커널 연결 해제
+
